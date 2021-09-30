@@ -1,1 +1,182 @@
 /* Add CSS styling here */
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /* border: 1px solid grey; */
+}
+/* General Styles */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size:1.6rem;
+    background-color: #fff;
+    line-height: 1.5;
+    color: #4f4f4f;
+    font-family: 'Roboto Mono', monospace;
+}
+a {
+    font-family: 'Roboto Mono', monospace;
+    color: #624565;
+    text-decoration: none;
+}
+h1, h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: #624565;
+    text-align: center;
+    margin-bottom: 5%:
+}
+h1 {
+    color: #fdf0fe;
+    font-size: 5rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+section {
+    padding: 4% 0;
+}
+button {
+    padding: 2% 4%;
+    margin-top: 5%;
+    color: #624565;
+    background-color: rgb(198, 202, 247);
+    border: 5px solid #e652f3;
+    font-size: 1.6rem;
+    transition: 3s;
+}
+button:hover {
+    color: #624565;
+    background-color: #fff;
+}
+/* header section styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color:rgba(255, 225, 255, 0.8);
+}
+.my-name {
+    font-size: 2rem;
+    width: 25%;
+}
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* about section styles */
+#about {
+    height: 95vh;
+    background-image: url("https://images.unsplash.com/photo-1554310603-d39d43033735?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YW5pbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about div {
+    width: 75%;
+    margin: 20%;
+    text-align: center;
+}
+/* projects section styles */
+#projects {
+    padding-bottom: 0;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.img, .text {
+    width: 50%;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+.text div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.anime {
+    background-image: url("https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80");
+}
+.youtube {
+    background-image: url("https://images.unsplash.com/photo-1551817958-c5b51e7b4a33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+}
+.twitter {
+    background-image: url("https://images.unsplash.com/photo-1622920157882-35cf1304beb4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+}
+.opensea {
+    background-image: url("https://images.unsplash.com/photo-1590286162167-70fb467846ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+}
+.tennis {
+    background-image: url("https://images.unsplash.com/photo-1558365849-6ebd8b0454b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80");
+}
+.sneaker {
+    background-image: url("https://images.unsplash.com/photo-1612821745127-53855be9cbd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80");
+}
+/* footer section  */
+#contact {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 225, 255, 0.8);
+    padding: 2% 0;
+}
+.bottom {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom button {
+    padding: 2%;
+    margin: 2%;
+}
