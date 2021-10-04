@@ -2,78 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Add viewport meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <!-- Link stylesheet -->
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="style/index.css"/>
     <title>BENYE</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="my-name">
-                <a href="#home">benjamin craddock</a>
+<!-- html starts here -->
+    <header> <!-- header starts here -->
+        <nav class="main">
+            <div class="title">
+                <h1>enter: benye</h1>
             </div>
             <div class="links">
-                <a href="#home">home</a>
-                <a href="#about">about</a>
-                <a href="#contact">contact</a>
-                <a href="#projects">projects</a>
+                <button><a href="index.html">home</a></button>
+                <button><a href="about.html">about</a></button>
+                <button><a href="contact.html">contact</a></button>
+                <button><a href="projects.html">projects</a></button>
             </div>
         </nav>
-    </header>
-    <section id="about">
+    </header> <!-- header ends here -->
+    <section id="top"> <!-- top section starts here -->
         <div class="titles">
-            <h1>benjamin craddock</h1>
-            <button>my projects</button>
+            <h2>who is benye?</h2>
+            <button><a href="projects.html">enter: projects</a></button>
         </div>
-    </section>
-    <section id="projects">
-        <div class="container"> <!-- this opens the container-->
-            <div class="img anime"></div>
-                <div class="text">
-                    <div>
-                        <h2>anime world</h2>
-                    </div>
-                </div>
-            <div class="img youtube"></div>
-                <div class="text">
-                    <div>
-                        <h2>into the sneaker-verse</h2>
-                    </div>
-                </div>
-            <div class="img twitter"></div>
-                <div class="text">
-                    <div>
-                        <h2>social experiment: building a community on twitter</h2>
-                    </div>
-                </div>
-            <div class="img opensea"></div>
-                <div class="text">
-                    <div>
-                        <h2>work in progress: building an nft collection with just .5 eth</h2>
-                    </div>
-                </div>
-            <div class="img tennis"></div>
-                <div class="text">
-                    <div>
-                        <h2>journey to becoming federer in 90 days</h2>
-                    </div>
-                </div>
-            <div class="img sneaker"></div>
-                <div class="text">
-                    <div>
-                        <h2>work in progress: my sneaker collection</h2>
-                    </div>
-                </div>
+    </section> <!-- top section ends here -->
+    <section id="projects"> <!-- projects section starts here -->
+        <div class="portfolio"> <!-- this opens the container-->
+            <div class="portfolio-elements">
+                <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" alt="Anime">
+                <p>anime world</p>
+            </div>
+            <div class="portfolio-elements">
+                <img src="https://images.unsplash.com/photo-1551817958-c5b51e7b4a33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="YouTube">
+                <p>into the sneaker-verse</p>
+            </div>
+            <div class="portfolio-elements">
+                <img src="https://images.unsplash.com/photo-1622920157882-35cf1304beb4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Twitter">
+                <p>social experiment: building a community on twitter</p>
+            </div>
+            <div class="portfolio-elements">
+                <img src="https://images.unsplash.com/photo-1590286162167-70fb467846ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Ethereum">
+                <p>work in progress: building an nft collection with just .5 eth</p>
+            </div>
+            <div class="portfolio-elements">
+                <img src="https://images.unsplash.com/photo-1558365849-6ebd8b0454b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80" alt="Tennis">
+                <p>journey to becoming federer in 90 days</p>
+            </div>
+            <div class="portfolio-elements">
+                <img src="https://images.unsplash.com/photo-1612821745127-53855be9cbd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="Air Jordan 1 High OG Mocha">
+                <p>work in progress: road to 100 sneakers</p>
+            </div>
         </div> <!-- this closes the container-->
-    </section>
-    <footer id="contact">
+    </section> <!-- projects section ends here -->
+    <footer>
         <div class="bottom">
-            <button>contact me</button>
+            <button><a href="contact.html">contact me</a></button>
         </div>
     </footer>
 </body>
