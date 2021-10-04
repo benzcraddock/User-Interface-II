@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 
 
@@ -149,6 +149,7 @@ nav.main {
     justify-content: center;
     align-items: center;
     margin: 2%;
+    text-align: center;
 }
 
 
@@ -166,3 +167,47 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
+/* Media Queries */
+@media(max-width: 500px) {
+    /* apply these styles to any screen that is 500px or smaller. Only the changes go here */
+    
+    /* header section styles - nav is already display:flex so we don't have to use it again */
+    nav.main {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .links {
+        width: 100%;
+    }
+
+    /* Top Section Styles */
+    #top {
+        margin-top: 0;
+    }
+    .titles {
+        color: #fff;
+    }
+
+    /* Projection Section Styles */
+    .portfolio {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .portfolio-elements {
+        width: 90%;
+        margin: 2% 0;
+        padding: 2%;
+    }
+
+    /* Contact Section */
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom {
+        width: 90%;
+    }
+} /* this closes the media query */
