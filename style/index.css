@@ -94,6 +94,7 @@ nav.main {
 }
 .title {
     width: 25%;
+    text-align: center;
 }
 .links {
     width: 50%;
@@ -181,12 +182,15 @@ footer {
     .links {
         width: 100%;
     }
+    .title {
+        width: 100%;
+    }
 
     /* Top Section Styles */
     #top {
-        margin-top: 0;
+        margin-top: 0%;
     }
-    .titles {
+    .titles h2 {
         color: #fff;
     }
 
@@ -194,11 +198,15 @@ footer {
     .portfolio {
         flex-wrap: wrap;
         justify-content: center;
+        background-color:rgb(198, 202, 247)
     }
     .portfolio-elements {
         width: 90%;
         margin: 2% 0;
         padding: 2%;
+    }
+    .portfolio-elements img {
+        border: 3px solid black;
     }
 
     /* Contact Section */
@@ -206,6 +214,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 4%;
     }
     .bottom {
         width: 90%;
