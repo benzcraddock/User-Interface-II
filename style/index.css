@@ -229,9 +229,13 @@ footer {
     nav.main {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        position: relative;
     }
     .links {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
     }
     .title {
         width: 100%;
@@ -240,6 +244,7 @@ footer {
     /* Top Section Styles */
     #top {
         margin-top: 0;
+        height: 45vh;
     }
     .titles h2 {
         color: #fff;
