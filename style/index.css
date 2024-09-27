@@ -1,1 +1,278 @@
 /* Add CSS styling here */
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /* border: 1px solid grey; */
+}
+
+
+/* General Styles */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size:1.8rem;
+    background-color: #fffafa;
+    line-height: 1.5;
+    color: #4f4f4f;
+    font-family: 'Roboto Mono', monospace;
+}
+a {
+    color: #624565;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 2s;
+}
+h1, h2, h3 {
+    font-family: 'Roboto Mono', monospace;
+    color: #624565;
+    text-align: center;
+    letter-spacing: 3px;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+section, footer {
+    padding: 4% 0;
+}
+button {
+    color: #624565;
+    background-color: rgb(198, 202, 247);
+    border: 4px solid #e652f3;
+    font-size: 1.8rem;
+    padding: 2% 3%;
+}
+button:hover {
+    background-color: #fffafa;
+}
+
+
+/* header section styles */
+nav.main {
+    padding: 2% 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color:rgba(255, 225, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    width: 25%;
+    text-align: center;
+}
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* top section styles */
+#top {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1554310603-d39d43033735?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YW5pbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titles {
+    text-align: center;
+    line-height: 2;
+}
+.titles button {
+    padding: 6%;
+}
+
+
+/* projects section styles */
+#projects {
+    padding: 0;
+}
+.portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.portfolio-elements {
+    width: 35%;
+    margin: 0 auto;
+    padding: 2%;
+}
+.portfolio-elements img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 20vh;
+}
+.portfolio-elements p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    text-align: center;
+}
+
+
+/* footer section  */
+footer {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 225, 255, 0.8);
+}
+.bottom {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries */
+@media(max-width: 800px) {
+    /* apply these styles to any screen that is 500px or smaller. Only the changes go here */
+        /* header section styles - nav is already display:flex so we don't have to use it again */
+        nav.main {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .links {
+            width: 100%;
+        }
+        .title {
+            width: 100%;
+        }
+    
+        /* Top Section Styles */
+        #top {
+            margin-top: 0;
+        }
+        .titles h2 {
+            color: #fff;
+        }
+    
+        /* Projection Section Styles */
+        .portfolio {
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color:rgb(198, 202, 247)
+        }
+        .portfolio-elements {
+            width: 60%;
+            margin: 2% 0;
+            padding: 2%;
+        }
+        .portfolio-elements img {
+            width: 80%;
+            height: 55vh;
+            border: 3px solid black;
+        }
+    
+        /* Contact Section */
+        footer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4%;
+        }
+        .bottom {
+            width: 90%;
+        }
+}
+
+/* Media Queries */
+@media(max-width: 500px) {
+    /* apply these styles to any screen that is 500px or smaller. Only the changes go here */
+    
+    /* header section styles - nav is already display:flex so we don't have to use it again */
+    nav.main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    .title {
+        width: 100%;
+    }
+
+    /* Top Section Styles */
+    #top {
+        margin-top: 0;
+        height: 45vh;
+    }
+    .titles h2 {
+        color: #fff;
+    }
+
+    /* Projection Section Styles */
+    .portfolio {
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color:rgb(198, 202, 247)
+    }
+    .portfolio-elements {
+        width: 90%;
+        margin: 2% 0;
+        padding: 2%;
+    }
+    .portfolio-elements img {
+        border: 3px solid black;
+    }
+
+    /* Contact Section */
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+    }
+    .bottom {
+        width: 90%;
+    }
+} /* this closes the media query */
